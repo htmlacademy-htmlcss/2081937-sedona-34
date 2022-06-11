@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header"> 
-      <img class="logo" href="htmlacademy.ru" src="" alt="Логотип" width="138" height="70">
+      <img class="logo" href="#" src="images/logo-sedona.svg" alt="Логотип Седона" width="139" height="70">
       <nav class="navigation"> 
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -21,18 +22,14 @@
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">
-                Поиск
-              </span>
+            <a class="navigation-link item-search" href="#">
+              Поиск
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">
-                Избранное
-              </span>
-            </a>
+           <a class="navigation-link item-fav" href="#">
+              Избранное 
+           </a>
           </li>
           <li class="navigation-item">
               <a class="button button-offer" href="#">Хочу сюда</a>
@@ -44,13 +41,13 @@
       <section class="welcome_picture">
         <ul class = "welpic-list">
           <li class="welpic-item">
-            <img class="main-sedona-pic" src="" alt="О Седоне" width="456.7" height="212.77">
+            <img class="main-sedona-pic" src="images/sedona-1.jpg" alt="Седона фотография на фон" width="1200" height="485">
           </li>
           <li class="welpic-item">
-            <img class="main-welcome-pic" src="" alt="Добро пожаловать" width="187.7" height="44.7">
+            <img class="main-decorative-pic" src="images/border.svg" alt="Декоративная рамка" width="1200" height="57">
           </li>
           <li class="welpic-item">
-            <img class="main-desctiption-pic" src="" alt="Описание" width="256" height="28.78">
+            <img class="main-welcome-pic" src="images/welcome.svg" alt="Добро пожаловать в Седону" width="458" height="352">
           </li>
       </ul>
       </section>
@@ -65,33 +62,41 @@
           <li class="advantages-item">
             <h3 class="advantages-title">Настоящий городок</h3>
             <p>— №1 —</p>
-            <p class="advantages-description">Седона — не аттракцион для туристов, там течет своя жизнь</p>
-            <img class ="sedona-image"src="" alt="Седона">
+            <p class="advantages-description">Седона — не аттракцион для туристов, там течет своя жизнь</p>       
+          </li>
+          <li class="advantages-item">
+            <img class ="sedona-image"src="images/sedona-2.jpg" alt="Седона город" width="800" height="384">
           </li>
           <li class="advantages-item">
             <h3 class="advantages-title">Жильё</h3>
+            <span class="hostel-logo">Домик</span>
             <p class="advantages-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="advantages-item">
             <h3 class="advantages-title">Еда</h3>
+            <span class="food-logo">Гамбург</span>
             <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="advantages-item">
             <h3 class="advantages-title">Сувениры</h3>
+            <span class="gift-logo">Подарок</span>
             <p class="advantages-description">Не только китайского, но и настоящего местного производства!</p>
           </li>
           <li class="advantages-item">
             <h3 class="advantages-title">Там есть мост дьявола</h3>
             <p>— №2 —</p>
             <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            <img class ="devils-bridge"src="" alt="Мост дьявола">
           </li>
+          <li class="advantages-item">
+            <img class ="devils-bridge"src="images/sedona-3.jpg" alt="Мост дьявола" width="800" height="384">
+          </li>  
           <li class="advantages-item">
             <h3 class="advantages-title">Небольшая площадь</h3>
             <p>— №3 —</p>
             <p class="advantages-description">Все достопримечательности находятся очень близко</p>
           </li>
-          <li class="advantages-item">Красивая дорога</h3>
+          <li class="advantages-item">
+            <h3 class="advantages-title">Красивая дорога</h3>
             <p>— №4 —</p>
             <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
@@ -132,12 +137,13 @@
           <button class="amount_plus">+</button>
       </div>
 
-        <button class="button" type="submit">Найти</button>
+        <button class="button button-in-form" type="submit">Найти</button>
       </form>      
     </main>
 
     <footer class="page-footer">
       <section class="footer-subs-email">   
+        <!--<img class ="background-sedona"src="images/sedona-4.jpg" alt="Седона размытое изображение" width="1200" height="411">-->
         <h1 class="subs-title">Подпишитесь на рассылку</h1>
         <p class="subs-content">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subs-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -150,17 +156,16 @@
       <section class="footer-social">
       <ul class="footer-social-list">
           <li class="footer-social-item">
-              <img class="logo" href="https://vk.com/htmlacademy" src="" alt="Вк ссылка">
+              <a class="logo-vk" href="https://vk.com/htmlacademy">vk</a>
           </li>
           <li class="footer-social-item">
-              <img class="logo" href="https://t.me/htmlacademy" src="" alt="Телеграмм ссылка">
+              <a class="logo-tg" href="https://t.me/htmlacademy">telegram</a>
           </li>
           <li class="footer-social-item">
-            <img class="logo" href="https://www.youtube.com/user/htmlacademyru" src="" alt="Ютуб ссылка">
-          </li>
+            <a class="logo-yt" href="https://www.youtube.com/user/htmlacademyru">Youtube</a>
       </ul>
       <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <img class="logo" href="htmlacademy.ru" src="" alt="Логотип академии">
+      <img class="logo-htmlac" href="htmlacademy.ru" src="images/htmlacademy.svg" alt="Логотип академии" width = "115px" height = "33px">
     </section>
   </footer>
 

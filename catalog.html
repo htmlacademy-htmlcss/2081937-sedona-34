@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header"> 
-        <img class="logo" href="htmlacademy.ru" src="" alt="Логотип" width="138" height="70">
+        <img class="logo" href="#" src="images/logo-sedona.svg" alt="Логотип Седона" width="139" height="70">
         <nav class="navigation"> 
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -21,19 +22,15 @@
           </ul>
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
-                <span class="visually-hidden">
+                <a class="navigation-link item-search" href="#">
                   Поиск
-                </span>
-              </a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
-                <span class="visually-hidden">
-                  Избранное
-                </span>
-              </a>
-            </li>
+                </a>
+              </li>
+              <li class="navigation-item">
+               <a class="navigation-link item-fav" href="#">
+                  Избранное 
+               </a>
+              </li>
             <li class="navigation-item">
                 <a class="button button-offer" href="#">Хочу сюда</a>
             </li> 
@@ -47,11 +44,10 @@
                 <h1>Гостиницы Седоны</h1>
                 <ul>
                     <li>
-                        <img class="home-outs" href="#" src="" alt="Домик.1" width="12" height="11.7">
-                        <img class="home-in" href="#" src="" alt="Домик.2" width="14" height="3.5">
+                        <img class="home-outs" src="/images/home.svg" alt="Домик" width="12" height="12">
                     </li>
                     <li>
-                        <img class="arrow" href="#" src="" alt="Стрелка" width="5.11" height="7.95">
+                        <img class="arrow" src="/images/arrow.svg" alt="Стрелка" width="5" height="8">
                     </li>
                     <li>
                         <p>Гостиницы</p>
@@ -95,7 +91,7 @@
                             <div id="line3"></div>
                             <div id="rectangle33"></div>
                         </div>
-                        <button type="button" name="button-apply">Применить</button>
+                        <button type="button button-apply-filter" name="button-apply">Применить</button>
                         <p>Сбросить</p>
                     </section>                  
                 </form>
@@ -112,17 +108,20 @@
                 <option value="expensive">Сначала дорогие</option>
             </select>
             <a class="button-table" href="#">
-                <span class="visually-hidden">Показать таблицу</span>
+                <span class="icon-table">Значок таблицы</span>
+               <!-- <span class="visually-hidden">Показать таблицу</span>-->
             </a>
             <a class="button-slideshow" href="#">
-                <span class="visually-hidden">Показать карточки</span>
+                <span class="icon-slideshow">Значок слайдшоу</span>
+               <!--<span class="visually-hidden">Показать карточки</span>--> 
             </a>
             <a  class="button-list" href="#">
-                <span class="visually-hidden">Показать список</span>
+                <span class="icon-list">Значок список</span>
+                <!--<span class="visually-hidden">Показать список</span>--> 
             </a>
             <ul class="hotel-list">
                 <li class="hotel-item">
-                    <img src="" width="300" height="211" alt="Amara" >
+                    <img src="images/hotel-1.jpg" width="300" height="211" alt="Amara" >
                     
                     <div class="item-description">
                         <h1 class="description-header"><a href="#">Amara Resort & Spa</a></h1>
@@ -137,10 +136,7 @@
                         <div class="rating">
                             <ul class="rating-list">
                                 <li class="rating-item">
-                                    <img class="rating-stars" src="" width="18" height="17" alt="star">
-                                    <img class="rating-stars" src="" width="18" height="17" alt="star">
-                                    <img class="rating-stars" src="" width="18" height="17" alt="star">
-                                    <img class="rating-stars" src="" width="18" height="17" alt="star">
+                                    <span class="four-stars">4 звезды</span>
                                 </li>
                                 <li class="rating-item">
                                     <span>Рейтинг: 8,5</span>
@@ -151,7 +147,7 @@
                 </li>
 
                 <li class="hotel-item">
-                    <img src="" width="300" height="211" alt="Villas" >
+                    <img src="images/hotel-2.jpg" width="300" height="211" alt="Villas" >
                     
                     <div class="item-description">
                         <h1 class="description-header"><a href="#">Villas at Poco Diablo</a></h1>
@@ -166,10 +162,7 @@
                         <div class="rating">
                             <ul class="rating-list">
                                 <li class="rating-item">
-                                    <img class="rating-stars" src="" width="18" height="17" alt="star">
-                                    <img class="rating-stars" src="" width="18" height="17" alt="star">
-                                    <img class="rating-stars" src="" width="18" height="17" alt="star">
-                                    <img class="rating-stars" src="" width="18" height="17" alt="star">
+                                    <span class="four-stars">4 звезды</span>
                                 </li>
                                 <li class="rating-item">
                                     <span>Рейтинг: 9,2</span>
@@ -179,7 +172,7 @@
                     </div>          
                 </li>
                 <li class="hotel-item">
-                    <img src="" width="300" height="211" alt="Desert" >
+                    <img src="images/hotel-3.jpg" width="300" height="211" alt="Desert" >
                     
                     <div class="item-description">
                         <h1 class="description-header"><a href="#">Desert Quail Inn</a></h1>
@@ -194,9 +187,7 @@
                         <div class="rating">
                             <ul class="rating-list">
                                 <li class="rating-item">
-                                    <img class="rating-stars" src="" width="18" height="17" alt="star">
-                                    <img class="rating-stars" src="" width="18" height="17" alt="star">
-                                    <img class="rating-stars" src="" width="18" height="17" alt="star">
+                                    <span class="three-stars">3 звезды</span>
                                 </li>
                                 <li class="rating-item">
                                     <span>Рейтинг: 6,9</span>
@@ -206,7 +197,7 @@
                     </div>          
                 </li>
                 <li class="hotel-item">
-                    <img src="" width="300" height="211" alt="GreenTree" >
+                    <img src="images/hotel-4.jpg" width="300" height="211" alt="GreenTree" >
                     
                     <div class="item-description">
                         <h1 class="description-header"><a href="#">GreenTree Inn</a></h1>
@@ -221,8 +212,7 @@
                         <div class="rating">
                             <ul class="rating-list">
                                 <li class="rating-item">
-                                    <img class="rating-stars" src="" width="18" height="17" alt="star">
-                                    <img class="rating-stars" src="" width="18" height="17" alt="star">
+                                    <span class="two-stars">2 звезды</span>
                                 </li>
                                 <li class="rating-item">
                                     <span>Рейтинг: 5,0</span>
@@ -263,7 +253,7 @@
                     <span>Гостиниц на странице</span>
                     <div class="block-amount">
                         <div id="rectangle37"></div>
-                        <img class="select-more-arrow" src="" width="11.93" height="7.02" alt="arrow-more">
+                        <img class="select-more-arrow" src="/images/arrow.svg" width="12" height="7" alt="arrow-more">
                         <span>4</span>
                     </div>
                 </div>
@@ -282,19 +272,18 @@
           </form>
         </section>  
         <section class="footer-social">
-        <ul class="footer-social-list">
-            <li class="footer-social-item">
-                <img class="logo" href="https://vk.com/htmlacademy" src="" alt="Вк ссылка">
-            </li>
-            <li class="footer-social-item">
-                <img class="logo" href="https://t.me/htmlacademy" src="" alt="Телеграмм ссылка">
-            </li>
-            <li class="footer-social-item">
-                <img class="logo" href="https://www.youtube.com/user/htmlacademyru" src="" alt="Ютуб ссылка">
-            </li>
-        </ul>
-        <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <img class="logo" href="htmlacademy.ru" src="" alt="Логотип академии">
+            <ul class="footer-social-list">
+                <li class="footer-social-item">
+                    <a class="logo-vk" href="https://vk.com/htmlacademy">vk</a>
+                </li>
+                <li class="footer-social-item">
+                    <a class="logo-tg" href="https://t.me/htmlacademy">telegram</a>
+                </li>
+                <li class="footer-social-item">
+                  <a class="logo-yt" href="https://www.youtube.com/user/htmlacademyru">Youtube</a>
+            </ul>
+            <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            <img class="logo-htmlac" href="htmlacademy.ru" src="images/htmlacademy.svg" alt="Логотип академии" width = "115px" height = "33px">
       </section>
     </footer>
   </body>
