@@ -25,15 +25,15 @@
                     </li> 
                 </ul>
                 </nav>
-                <ul class="navigation-list navigation-user">
-                    <li class="navigation-item">
-                    <a class="navigation-link item-search" href="#"><span class = "visually-hidden">Поиск</span></a>
+                <ul class= "navigation-user">
+                    <li class="navigation-user-item">
+                      <a class="navigation-user-link item-search" href="#"><span class = "visually-hidden">Поиск</span></a>
                     </li>
-                    <li class="navigation-item">
-                    <a class="navigation-link item-fav" href="#"><span class = "visually-hidden">Избранное</span></a>
+                    <li class="navigation-user-item">
+                      <a class="navigation-user-link item-fav" href="#"><span class = "visually-hidden">Избранное</span></a>
                     </li>
-                </ul>  
-                <a class="button button-offer" href="#">Хочу сюда!</a>
+                  </ul>  
+                <a class="button button-offer" href="#"><span class = "container-for-button-offer">Хочу сюда!</span></a>
             </div>
         </header>
         <main class="main-catalog main-container">
@@ -41,7 +41,7 @@
                 <h1>Гостиницы Седоны</h1> 
                 <ul class="breadcrumbs">     
                     <li>
-                        <a class="home-outs breadcrumbs-item" href="#">Главная</a>  
+                        <a class="home-outs breadcrumbs-item" href="#"><span class="visually-hidden">Главная</span></a>  
                     </li>
                     <li>
                         <a class="breadcrumbs-item">Гостиницы</a>    
@@ -81,8 +81,10 @@
                         </fieldset>
                         <fieldset class="filter-cost-title">
                             <legend>Стоимость, ₽:</legend>
-                                <label class="cost-choosing-from">От <input class="field-input-value" type="number" name="from" value="0" id="from-value"></label>
-                                <label class="cost-choosing-to">До <input class="field-input-value" type="number" name="to" value="9000" id="to-value"></label>
+                                <input class="field-input-value field-input-value-from" type="number" name="from" value="0" id="from-value">
+                                <label for = "from-value" class="cost-choosing cost-choosing-from">от</label>
+                                <input class="field-input-value field-input-value-to" type="number" name="to" value="9000" id="to-value">
+                                <label for = "to-value" class="cost-choosing cost-choosing-to">до</label>
                         </fieldset>    
                         <div class="button-container">
                             <button type="submit" class="button button-apply-filter" name="button-apply">Применить</button>
@@ -101,39 +103,39 @@
                             <option value="expensive">Сначала дорогие</option>
                         </select>
                         <ul class="sorting-view">
-                            <li class="sorting-item"> 
-                                <a class="button-table" href="#"><span class="visually-hidden">Табличная сортировка</span></a>
+                            <li class="sorting-item sorting-item-active"> 
+                                <a class="button-table " href="#"><span class="visually-hidden">Табличная сортировка</span></a>
                             </li>
-                            <li class="sorting-item">
-                                <a class="button-slideshow" href="#"><span class="visually-hidden">Сортировка слайдшоу</span></a> 
+                            <li class="sorting-item sorting-item-unactive">
+                                <a class="button-slideshow " href="#"><span class="visually-hidden">Сортировка слайдшоу</span></a> 
                             </li>
-                            <li class="sorting-item"> 
-                                <a  class="button-list" href="#"><span class="visually-hidden">Сортировка в виде списка</span></a>
+                            <li class="sorting-item sorting-item-unactive"> 
+                                <a  class="button-list " href="#"><span class="visually-hidden">Сортировка в виде списка</span></a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <ul class="hotel-list">
                     <li class="hotel-item">
-                        <img src="images/hotel-1.jpg" width="300" height="211" alt="Amara">
+                        <img class="hostel-picture" src="images/hotel-1.jpg" width="300" height="211" alt="Amara">
                         <div class="item-description">
                             <h4 class="description-header"><a href="#">Amara Resort & Spa</a></h4>
                             <div class="item-text">
-                            <span>Гостиница</span>
-                            <span>От 4000 ₽</span>
+                            <span class="item-text-hostel">Гостиница</span>
+                            <span class="item-text-cost">От 4000 ₽</span>
                             </div>
                             <div class = "buttons-info-about-hostel">
                             <a class="but-dec button-more" href="#">Подробнее</a>
                             <a class="but-dec button-add-in-fav" href="#">В избранное</a>
                             </div>
                             <div class="rating">
-                                <h6 class="rating-stars">4 звезды</h6>  
-                                <span>Рейтинг: 8,5</span>   
+                                <h6 class="rating-stars rating-four-stars"><span class="visually-hidden">4 звезды</span></h6>  
+                                <span class = "rating-text">Рейтинг: 8,5</span>   
                             </div>
                         </div>          
                     </li>
                     <li class="hotel-item">
-                        <img src="images/hotel-2.jpg" width="300" height="211" alt="Villas">
+                        <img class="hostel-picture" src="images/hotel-2.jpg" width="300" height="211" alt="Villas">
                         <div class="item-description">
                             <h4 class="description-header"><a href="#">Villas at Poco Diablo</a></h4>
                             <div class="item-text">
@@ -145,13 +147,13 @@
                             <a class = "but-dec button-in-fav" href="#">В избранном</a>
                             </div>
                             <div class="rating">    
-                                <h6 class="rating-stars">4 звезды</h6>   
-                                <span>Рейтинг: 9,2</span>     
+                                <h6 class="rating-stars rating-four-stars"><span class="visually-hidden">4 звезды</span></h6>   
+                                <span class = "rating-text">Рейтинг: 9,2</span>     
                             </div>
                         </div>          
                     </li>
                     <li class="hotel-item">
-                        <img src="images/hotel-3.jpg" width="300" height="211" alt="Desert">                 
+                        <img class="hostel-picture" src="images/hotel-3.jpg" width="300" height="211" alt="Desert">                 
                         <div class="item-description">
                             <h4 class="description-header"><a href="#">Desert Quail Inn</a></h4>
                             <div class="item-text">
@@ -163,13 +165,13 @@
                             <a class="but-dec button-add-in-fav" href="#">В избранное</a>
                             </div>
                             <div class="rating">
-                                <h6 class="rating-stars">3 звезды</h6>
-                                <span>Рейтинг: 6,9</span>   
+                                <h6 class="rating-stars rating-three-stars"><span class="visually-hidden">3 звезды</span></h6>
+                                <span class = "rating-text">Рейтинг: 6,9</span>   
                             </div>
                         </div>          
                     </li>
                     <li class="hotel-item">
-                        <img src="images/hotel-4.jpg" width="300" height="211" alt="GreenTree" >
+                        <img class="hostel-picture" src="images/hotel-4.jpg" width="300" height="211" alt="GreenTree" >
                         <div class="item-description">
                             <h4 class="description-header"><a href="#">GreenTree Inn</a></h4>
                             <div class="item-text">
@@ -181,8 +183,8 @@
                             <a class="but-dec button-add-in-fav" href="#">В избранное</a>
                             </div>
                             <div class="rating">
-                                <h6 class="rating-stars">2 звезды</h6>  
-                                <span>Рейтинг: 5,0</span>   
+                                <h6 class="rating-stars rating-two-stars"><span class="visually-hidden">2 звезды</span></h6>  
+                                <span class = "rating-text">Рейтинг: 5,0</span>   
                             </div>
                         </div>          
                     </li>
@@ -210,8 +212,8 @@
                             </li>
                         </ul>
                         <div class="select-amount-container">
-                            <label class="info-abt-amount-host">Гостиниц на странице</label>
-                            <select class="select-amount" aria-label="Отбор">
+                            <label class="info-abt-amount-host" for="field-with-amount">Гостиниц на странице:</label>
+                            <select class="select-amount" aria-label="Отбор" id="field-with-amount">
                                 <option value="one-items">1</option>
                                 <option value="two-items">2</option>
                                 <option value="three-items">3</option>
@@ -230,8 +232,10 @@
         </main>
         <footer class="page-footer">
             <section class="footer-subs-email">   
-            <span class="subs-title">Подпишитесь на рассылку</span>
-            <p class="subs-content">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <div class ="container-for-subs-title">
+                <span class="subs-title">Подпишитесь на рассылку</span>
+                <p class="subs-content">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            </div>
             <form class="subs-form" action="https://echo.htmlacademy.ru/" method="post">
                 <p class="subs-form-name">
                 <input class="subs-field" type="text" id="subs-email-name" name="subs-email-name" placeholder="Ваш e-mail">
