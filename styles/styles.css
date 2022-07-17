@@ -96,6 +96,7 @@ body {
     line-height: 26px; 
     margin-bottom: -1px;
     margin-left: 47px;
+    margin-right: 47px;
 }
 
 .navigation-container {
@@ -110,7 +111,6 @@ body {
     padding: 0;
     display: flex;
     flex-wrap: wrap; 
-    justify-content: space-between;
   }
   
 .navigation-user {
@@ -122,7 +122,7 @@ body {
     list-style-type: none;
     align-items: center;
     margin-left: auto;
-    column-gap: 5px;
+    flex-shrink: 0;
   }
 
 .navigation-user-link {
@@ -180,7 +180,7 @@ body {
 }
 
 .button-offer {
-    margin-left: 28px;
+    margin-left: 21px;
     min-width: 160px;
     background-color: #756157;
     border-radius: 4px;
@@ -226,7 +226,7 @@ body {
     color: #000000;
     padding: 0 180px;
     margin: 0;
-    margin-bottom: 31px;
+    margin-bottom: 30px;
 }
 
 .introduction-part-two{
@@ -255,10 +255,10 @@ body {
 
 .sedona-image {
     display: block;
-}
-
-.devils-bridge {
-    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .promo-item:nth-child(even) {
@@ -273,6 +273,7 @@ body {
     color: #000000;
     display: flex;
     flex-direction: column;
+    padding: 97px 45px;
 }
 .advantages-item-unwrapper::before{
     counter-increment: list;
@@ -281,12 +282,10 @@ body {
 
 .advantages-item-unwrapper:nth-child(odd) {
     background-color: #83B3D31F;
-    padding: 92px 85px;
 }
 
 .advantages-item-unwrapper:nth-child(even) {
     background-color: #83B3D333;
-    padding: 92px 85px;
 }
 
 .advantages-item {
@@ -308,9 +307,10 @@ body {
     list-style: none;
     color: #000000;
     background-color: #F0F6FA;
+    flex: 0 0 100%;
 }
 
-.advantages-title{
+.advantages-title {
     text-align: center;
     color:#000000;
     font-size: 24px;
@@ -318,7 +318,6 @@ body {
     text-transform: uppercase;
     margin: 0;
     margin-bottom: 30px;
-    padding: 0 29px;
     order: -1;
 }
 
@@ -342,7 +341,7 @@ body {
 }
 
 .advantages-with-pic-description {
-    padding: 92px 85px;
+    padding: 92px 45px;
     flex: 1 1 30%;
     list-style-type: none; 
     display: flex;
@@ -359,8 +358,9 @@ body {
 }
 
 .promo-item {
+    max-width: 400px;
     flex: 1 1 30%;
-    padding: 80px 85px;
+    padding: 80px 45px 76px;
 }
 
 .hostel-logo {
@@ -369,7 +369,7 @@ body {
     min-width: 75px;
     min-height: 70px;
     display: inline-block;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .food-logo {
@@ -378,7 +378,7 @@ body {
     min-width: 76px;
     min-height: 72px;
     display: inline-block;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .gift-logo {
@@ -387,16 +387,16 @@ body {
     min-width: 65px;
     min-height: 76px;
     display: inline-block;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .search-hostel {
-    padding: 91px 100px 68px;
+    padding: 90px 105px 55px;
     text-align: center;
 }
 
 .container-for-subscribe-button {
-    padding: 0 213px;
+    padding: 0 210px 15px 210px;
 }
 
 .subscribe-button:hover, .subscribe-button:active {
@@ -449,6 +449,7 @@ body {
     list-style: none;
     max-width: 448px;
     padding-left: 12px;
+    margin-right: 12px;
 }
 
 .footer-social-item:not(:last-child) {
@@ -456,7 +457,7 @@ body {
 }
 
 .footer-wrapper {
-    color: #ffffff;
+    background-color: #3F5E72;
     background-size: cover;
     background-image: url("../images/blured-sedona-footer.jpg");
     background-repeat: no-repeat;
@@ -485,6 +486,7 @@ body {
     font-weight: 400;
     font-size: 40px;
     line-height: 40px;
+    margin-bottom: 6px;
  }
  .contacts-phone:hover, .contacts-phone:active {
      color: #756157;
@@ -501,13 +503,14 @@ body {
 .container-for-subs-title {
     padding-left: 163px;
     padding-right: 164px;
+    margin-bottom: 45px;
 }
 
 .subs-content {
     text-align: center;
     font-size: 22px;
     line-height: 26px;
-    padding-bottom: 24px;
+    margin: 29px 0;
 }
 
 .subs-form {
@@ -602,7 +605,6 @@ body {
     left: 0;
     right: 0;
     z-index: 100;
-    /*этот цвет в формате HEX #f5f5f5 визуально выглядит по другому */
     background-color: rgba(242, 242, 242, 0.8);
 }
 
@@ -825,6 +827,7 @@ body {
     margin-top: 10px;
     padding: 0;
     margin-bottom: 40px;
+    flex-wrap: wrap;
 }
 
 .breadcrumbs-item {
@@ -857,12 +860,13 @@ input[type="number"]::-webkit-inner-spin-button {
 
 
 .field-wrapper {
+    background-color: #3F5E72;
     color: #ffffff;
     background-size: cover;
     background-image: url("../images/blured-sedona-form.jpg");
     background-repeat: no-repeat;
     display: block;
-    padding: 35px 70px 70px;
+    padding: 35px 70px 52px 70px;
 
 }
 
@@ -880,18 +884,18 @@ input[type="number"]::-webkit-inner-spin-button {
     width:144px;
     height:48px;
     border: 2px solid #FFFFFF;
-    padding: 14px 0 13px 19px;
+    padding: 19px 0 13px 15px;
 }
 
 .cost-choosing{
     position: relative;
     right: 14px;
-    top: 12px;   
+    top: 15px;   
     opacity: 30%;
 }
 
 .cost-choosing-to {
-    right: 30px;
+    right: 35px;
 }
 
 .scrollbar-active-line {
@@ -909,7 +913,7 @@ input[type="number"]::-webkit-inner-spin-button {
     background-color: #61615c;
     height: 55px;
     transform: rotate(90deg);
-    top: 50px;
+    top: 53px;
     left: -50px;
 }
 
@@ -921,7 +925,7 @@ input[type="number"]::-webkit-inner-spin-button {
     height: 227px;
     transform: rotate(90deg);
     left: -194px;
-    top: -36px;
+    top: -33px;
 }
 
 .scrollbar-active-button-from {
@@ -931,7 +935,7 @@ input[type="number"]::-webkit-inner-spin-button {
     width: 20px;
     height: 20px;
     left: -307px;
-    top: 68px;
+    top: 70px;
 }
 
 .scrollbar-active-button-to {
@@ -940,8 +944,8 @@ input[type="number"]::-webkit-inner-spin-button {
     border-radius: 5px;
     width: 20px;
     height: 20px;
-    top: 68px;
-    left: -82px;
+    top: 70px;
+    left: -90px;
 }
 
 .field-input-value-from {
@@ -964,6 +968,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .form-field {
+    padding: 0;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
@@ -1030,7 +1035,6 @@ input[type="number"]::-webkit-inner-spin-button {
 .catalog-filter {
     display: flex;
     width: 100%;
-    justify-content: space-between;
     color: #ffffff;
     line-height: 21px;
 }
@@ -1052,25 +1056,25 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .filter-cost-title {
     flex-direction: row;
-
+    margin-left: 95px;
 }
 
 .button-container {
-    padding-bottom: 20px;
+    margin-left: -20px;
+    padding-bottom: 13px;
     display: flex;
     flex-direction: column;
     justify-content: end;
 }
 
 .button-apply-filter {
-    min-width: 130px;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    min-width: 160px;
+    padding: 14px;
     color: #ffffff;
     text-transform: uppercase;
     background-color: #82B3D3;
     border: 0;
-    margin-bottom: 17px;
+    margin-bottom: 20px;
 }
 .button-apply-filter:hover, .button-apply-filter:active {
     background-color: #68A2CA;
@@ -1100,34 +1104,43 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .select-control {
+    font: inherit;
     border: 2px solid #E5E5E5;
     width: 100%;
     border-radius: 4px;
-    padding-left: 20px;
+    padding-left: 18px;
+    -o-appearance: none;
+    -ms-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("../images/arrowselectorblack.svg");
+    background-repeat: no-repeat;
+    background-position-x: 257px;
+    background-position-y: 17px;
 }
 .select-control:hover, .select-control:active {
     border-color: #68A2CA;
+}
+.select-control:disabled {
+    background-image: url("../images/arrowselectorgray.svg");
 }
 
 .sorting-hotel-container {
     display: flex;
     justify-content: space-between;
     padding-left: 72px;
-    padding-top: 62px;
+    padding-top: 58px;
 }
 
 .hotel-amount {
+    padding-top: 5px;
     color: #000000;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
 }
-
-/*.sorting-item-active {
-    border: 2px solid #000000;
-    border-radius: 4px;
-}*/
 
 .sorting-item-unactive {
     border: 2px solid #E5E5E5;
@@ -1141,7 +1154,10 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .sorting-view {
-    column-gap: 7px;
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    column-gap: 10px;
     padding: 0;
     margin: 0;
     margin-left: 78px;
@@ -1174,22 +1190,15 @@ input[type="number"]::-webkit-inner-spin-button {
     display: block;
 }
 
-.sorting-view {
-    display: flex;
-    flex-wrap: nowrap;
-    list-style: none;
-}
-
 /**Карточки каталога**/
 .hotel-list {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin: 0;
     padding: 0 71px 46px 73px;
-    margin-top: 60px;
-    column-gap: 9px;
+    margin-top: 55px;
+    column-gap: 18px;
 }
 
 .hostel-picture {
@@ -1197,7 +1206,8 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .hotel-item {
-    padding: 20px;
+    padding: 20px 20px 0 20px;
+    flex: 0 0 340px;
 }
 
 .hotel-item img {
@@ -1214,7 +1224,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .item-text span {
-    flex: 0 0  55%;
+    flex: 0 0  53%;
 }
 
 .item-text-hostel {
@@ -1238,7 +1248,7 @@ input[type="number"]::-webkit-inner-spin-button {
     line-height: 20px;
     text-transform: uppercase;  
     display: flex;
-    margin: 24px 0 20px 0;
+    margin: 17px 0 0 0;
     max-height: 38px;
     flex-wrap: nowrap;
 }
@@ -1327,7 +1337,7 @@ input[type="number"]::-webkit-inner-spin-button {
     width: 1057px;
     margin: 0 auto;
     margin-left: 73px;
-    padding-top: 30px; 
+    padding-top: 50px;
 }
 
 .pagination-container {
@@ -1341,6 +1351,7 @@ input[type="number"]::-webkit-inner-spin-button {
     margin: 0;
     padding: 0;
     column-gap: 8px;
+    flex-wrap: wrap;
 }
 
 .pagination-link {
@@ -1366,13 +1377,33 @@ input[type="number"]::-webkit-inner-spin-button {
 
 
 .select-amount {
+    font: inherit;
     margin-left: 51px;
     width: 160px;
     height: 40px;
     border: 2px solid #E5E5E5;
     border-radius: 4px;
+    padding-left: 10px;
+    -o-appearance: none;
+    -ms-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("../images/arrowselectorblack.svg");
+    background-repeat: no-repeat;
+    background-position-x: 125px;
+    background-position-y: 13px;
+}
+.select-amount:hover, .select-control:active {
+    border-color: #68A2CA;
+}
+.select-amount:disabled {
+    background-image: url("../images/arrowselectorgray.svg");
 }
 
+.select-amount-container {
+    padding-top: 8px;
+}
 
 /* Состояния svg */
 .footer-social-logo {
